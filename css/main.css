@@ -29,6 +29,8 @@ body{
 .gutter {
   padding-left:1.5rem;
   padding-right:1.5rem;
+  padding-top: 1em;
+
 }
 
 ul{
@@ -36,21 +38,53 @@ ul{
   padding:0;
 }
 
+h1{
+  text-align:center;
+}
+
+a{
+  color: blue;
+}
+
 h3{
   font-size:2rem;
 }
 
+.header{
+  background-color: lightgrey;
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 25em) {
 
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    text-align: center;
+  }
 
   li{
-    display: inline;
-    text-align: center;
+    display: inline-block;
   }
 
   .gutter{
     padding-left:2rem;
     padding-right:2rem;
+
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1{
+    text-align: left;
+  }
+
+  nav{
+    text-align: left;
   }
 
 }
